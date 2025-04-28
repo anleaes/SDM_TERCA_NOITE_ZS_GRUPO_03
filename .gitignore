@@ -6,3 +6,5 @@ modeloapp/__pycache__/*
 /apps/clients/__pycache__/*
 /apps/clients/migrations/*
 .env
+/apps/orders/__pycache__/*
+/apps/orders/migrations/*
