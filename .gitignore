@@ -1,3 +1,4 @@
+.env
 modeloapp/__pycache__/*
 /apps/categories/__pycache__/*
 /apps/categories/migrations/*
@@ -11,4 +12,3 @@ modeloapp/__pycache__/*
 /apps/clients/migrations/*
 /apps/orders/__pycache__/*
 /apps/orders/migrations/*
-.env
