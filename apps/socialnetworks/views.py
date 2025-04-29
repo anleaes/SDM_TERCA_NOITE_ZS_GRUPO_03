@@ -1,3 +1,10 @@
-from django.shortcuts import render
+from .models import SocialNetwork
+from rest_framework import viewsets
+from .serializers import SocialNetworkSerializer
 
-# Create your views here.
+# Após o comentario "# Create your views here." e crie as views "SocialNetwork".
+
+class SocialNetworkViewSet(viewsets.ModelViewSet):
+    queryset = SocialNetwork.objects.all()
+    serializer_class = SocialNetworkSerializer  
+    
