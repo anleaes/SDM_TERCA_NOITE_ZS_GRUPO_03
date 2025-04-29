@@ -1,7 +1,5 @@
 from django.db import models
-from products.models import Product
 from clients.models import Client
-from orderitem.models import OrderItem
 
 # Create your models here.
 
@@ -14,7 +12,6 @@ class Order(models.Model):
     )
     status = models.CharField('Status', max_length=20, choices=STATUS_CHOICES, null=True, blank=True, default='Em andamento')
     client = models.ForeignKey(Client, on_delete=models.CASCADE)
-    order_item = models.ManyToManyField(Product, through='OrderItem', blank=True)
     
     class Meta:
         verbose_name = 'Pedido'

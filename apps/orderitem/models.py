@@ -1,6 +1,5 @@
 from django.db import models
 from products.models import Product
-from clients.models import Client
 from orders.models import Order
 
 # Create your models here.
@@ -10,6 +9,7 @@ class OrderItem(models.Model):
     unitary_price = models.FloatField('Preco unitario',null=True, blank=True, default=0.0)
     order = models.ForeignKey(Order, on_delete=models.CASCADE)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    
 
     class Meta:
         verbose_name = 'Item de pedido'
