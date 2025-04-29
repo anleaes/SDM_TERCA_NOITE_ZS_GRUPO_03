@@ -7,4 +7,6 @@ modeloapp/__pycache__/*
 /apps/clients/migrations/*
 /apps/socialnetworks/__pycache__/*
 /apps/socialnetworks/migrations/*
+/apps/clients/__pycache__/*
+/apps/clients/migrations/*
 .env
